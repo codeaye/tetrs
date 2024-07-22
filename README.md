@@ -5,6 +5,9 @@
 Made with the power of 🦀 Rust, this remake offers a smooth and exciting puzzle experience. Whether you're a Tetris expert or a beginner, you'll find this hobby project at least a tad bit entertaining!
 
 
+![Preview](resources/game.png)
+
+
 ## Acknowledgements
 
  - [Macroquad](https://macroquad.rs/)
