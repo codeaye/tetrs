@@ -1,0 +1,42 @@
+[package]
+name = "tetrs"
+description = "Dive into the classic world of Tetris with a modern touch!"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.bundle]
+name = "Tetrs"
+identifier = "com.nav.tetrs"
+icon = [
+    "resources/icons/16x16.png",
+    "resources/icons/24x24.png",
+    "resources/icons/32x32.png",
+    "resources/icons/48x48.png",
+    "resources/icons/64x64.png",
+    "resources/icons/128x128.png",
+    "resources/icons/256x256.png",
+    "resources/icons/icns.icns",
+    "resources/icons/ico.ico",
+]
+category = "Arcade Game"
+deb_depends = [
+    "pkg-config",
+    "libx11-dev",
+    "libxi-dev",
+    "libgl1-mesa-dev",
+    "libasound2-dev",
+]
+osx_url_schemes = ["com.nav.tetrs"]
+
+[dependencies]
+lazy_static = "1.5.0"
+macroquad = { version = "0.4.11", features = ["audio"] }
+macroquad-text = "0.2.0"
+rustc-hash = "2.0.0"
+
+[profile.release]
+strip = true
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
