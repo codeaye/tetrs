@@ -8,6 +8,35 @@ Made with the power of 🦀 Rust, this remake offers a smooth and exciting puzzl
 ![Preview](resources/game.png)
 
 
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/codeaye/tetrs/
+```
+
+Go to the project directory
+
+```bash
+  cd tetrs
+```
+
+Install dependencies
+
+```bash
+  cargo install just
+```
+
+Build for your platform
+
+```bash
+  just build
+```
+
+
+
+
 ## Acknowledgements
 
  - [Macroquad](https://macroquad.rs/)
